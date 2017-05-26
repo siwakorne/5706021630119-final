@@ -58,7 +58,15 @@ export default {
       subject: '',
       unit: '',
       grade: '',
-      test: []
+      test: [],
+      ygrade1: 0,
+      ygrade2: 0,
+      ygrade3: 0,
+      ygrade4: 0,
+      yunit1: 0,
+      yunit2: 0,
+      yunit3: 0,
+      yunit4: 0
     }
   },
   computed: {
@@ -79,7 +87,17 @@ export default {
       this.grade = ''
       this.test = []
     },
-    ...mapActions(['addTodo'])
+    ...mapActions(['addTodo']),
+    cal () {
+      if (this.todos[0].text[0] === '1') {
+      }
+      if (this.todos[0].text[0] === '2') {
+      }
+      if (this.todos[0].text[0] === '3') {
+      }
+      if (this.todos[0].text[0] === '4') {
+      }
+    }
   }
 }
 </script>

@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   strict: process.env.NODE_ENV !== 'production',
   state: {
-    todos: []
+    todos: [],
+    cal: []
   },
   getters: {
     todos: (state) => state.todos
